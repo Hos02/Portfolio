@@ -24,3 +24,42 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-fadeInUp { animation: fadeInUp .6s ease-out both; }
+.animate-fadeInUp-delayed { animation: fadeInUp .8s ease-out .15s both; }
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* Blob mask utility (uses fancy radius to mimic organic shape) */
+.blob-mask {
+  border-radius: 46% 54% 60% 40% / 40% 40% 60% 60%;
+}
+
+/* Elevation helper for hero image */
+.shadow-elevated {
+  box-shadow: 0 20px 60px color-mix(in oklab, var(--foreground) 14%, transparent);
+}
+
+/* Card styles */
+.card {
+  border: 1px solid color-mix(in oklab, var(--foreground) 12%, transparent);
+  border-radius: 12px;
+  padding: 20px;
+  background: color-mix(in oklab, var(--background) 92%, transparent);
+}
+
+.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
