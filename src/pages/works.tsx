@@ -86,9 +86,10 @@ export default function Works() {
             <p className="mt-2 text-sm text-foreground/80">
               JermTravel.com is a tour operator based in Armenia, offering private tours, transfers,
               and customizable travel packages across Armenia and Georgia. Their mission is to make
-              every guest feel at home while showcasing the region's scenic beauty, cultural
+              every guest feel at home while showcasing the region&apos;s scenic beauty, cultural
               richness, and warm hospitality.
             </p>
+
             <div className="mt-3 text-sm flex gap-4">
               <a className="link-underline text-amber-400" href="https://jermtravel.com/">
                 Live

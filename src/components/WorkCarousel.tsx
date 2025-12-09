@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -30,13 +31,20 @@ export default function WorkCarousel({ images, title }: WorkCarouselProps) {
           {images.map((image, index) => (
             <CarouselItem key={index}>
               <div className="relative aspect-video rounded-lg overflow-hidden">
-                <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
                 {image.title && (
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <p className="text-white text-sm font-medium">{image.title}</p>
                   </div>
                 )}
               </div>
+
             </CarouselItem>
           ))}
         </CarouselContent>
