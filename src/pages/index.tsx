@@ -30,17 +30,23 @@ export default function Home() {
 
         <section className="px-6 sm:px-8 md:px-12 py-24 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1 text-center md:text-left animate-fadeInUp">
-            <p className="uppercase tracking-[.35em] text-sm text-foreground/60">Creative Developer</p>
+            <p className="text-sm tracking-[.08em] text-foreground/60">
+              Frontend Developer | Building Real-World Web Systems
+            </p>
             <h1 className="mt-3 text-4xl sm:text-6xl font-bold tracking-tight">
               Hovsep Babayan
             </h1>
-            <p className="mt-4 text-lg sm:text-xl text-foreground/80">
-              Sensible to frontend. Building delightful web apps with React, Next.js and TypeScript.
+            <p className="mt-5 max-w-2xl text-base sm:text-lg text-foreground/80 leading-relaxed">
+              I build real products, not just projects.
+              <br />
+              <br />
+              Frontend developer experienced in building scalable and user-friendly web applications using React,
+              Next.js, and TypeScript. Developed a CRM system for a dental clinic and multiple production-ready websites.
             </p>
             <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
-              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="/about">About me</Link>
-              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="/works">Works</Link>
-              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="/contact">Contact</Link>
+              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="/works">View Projects</Link>
+              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="#crm">View CRM Case Study</Link>
+              <Link className="rounded border px-5 py-2.5 hover:bg-foreground hover:text-background transition-colors" href="/contact">Contact Me</Link>
             </div>
           </div>
           <div className="order-1 md:order-2 relative mx-auto animate-fadeInUp">
